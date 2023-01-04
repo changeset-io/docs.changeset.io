@@ -14,12 +14,6 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "changeset.io", // Usually your GitHub org/user name.
-  projectName: "docs.changeset.io", // Usually your repo name.
-  trailingSlash: false,
-
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -58,7 +52,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Changeset Docs",
+        title: "Changeset",
         logo: {
           alt: "Changeset logo",
           src: "img/logo.svg",
@@ -66,9 +60,9 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "/category/workflows" ,
+            docId: "get-started/welcome" ,
             position: "left",
-            label: "Workflows",
+            label: "Docs",
           },
         ],
       },
@@ -79,8 +73,8 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Workflows",
-                to: "/docs/category/workflows",
+                label: "Get Started",
+                to: "/docs/category/get-started",
               },
             ],
           },
@@ -88,34 +82,34 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "LinkedIn",
+                href: "https://linkedin.com/company/changeset-io",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                label: "GitHub",
+                href: "https://github.com/changeset-io",
               },
             ],
           },
           {
-            title: "More",
+            title: "Explore",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "Give us feedback",
+                href: "https://changeset.io/feedback",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                label: "Our Public Roadmap",
+                href: "https://changeset.io/roadmap",
+              },
+              {
+                label: "Status",
+                href: "https://changeset.io/status",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Changeset.io.`,
       },
       prism: {
         theme: lightCodeTheme,

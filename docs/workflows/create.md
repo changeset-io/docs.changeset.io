@@ -91,6 +91,3 @@ When an event that your workflow is subscribed to is fired, Changeset will check
 
 ![edit markdown](/img/md.png)
 
-
-
-

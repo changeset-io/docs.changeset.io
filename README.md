@@ -39,3 +39,7 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
+# Deploy Key
+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
