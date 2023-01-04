@@ -68,14 +68,14 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
+        style: "light",
         links: [
           {
             title: "Docs",
             items: [
               {
                 label: "Get Started",
-                to: "/docs/category/get-started",
+                to: "/",
               },
             ],
           },
@@ -86,7 +86,7 @@ const config = {
                 label: "LinkedIn",
                 href: "https://linkedin.com/company/changeset-io",
               },
-              {
+              { 
                 label: "GitHub",
                 href: "https://github.com/changeset-io/community",
               },
