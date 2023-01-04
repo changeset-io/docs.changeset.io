@@ -101,7 +101,7 @@ const config = {
               },
               {
                 label: "Our Public Roadmap",
-                href: "https://github.com/changeset-io/projects/1",
+                href: "https://github.com/orgs/changeset-io/projects/1",
               },
               {
                 label: "Status",
