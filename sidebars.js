@@ -17,7 +17,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Get Started',
-        items: ['get-started/welcome', 'get-started/connect'],
+        items: ['get-started/welcome', 'get-started/connect', 'get-started/new-repo', 'get-started/create-a-workflow'],
     },
   ],
 };

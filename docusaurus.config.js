@@ -28,6 +28,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
@@ -87,7 +88,7 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/changeset-io",
+                href: "https://github.com/changeset-io/community",
               },
             ],
           },
@@ -96,15 +97,15 @@ const config = {
             items: [
               {
                 label: "Give us feedback",
-                href: "https://changeset.io/feedback",
+                href: "https://github.com/changeset-io/community/discussions",
               },
               {
                 label: "Our Public Roadmap",
-                href: "https://changeset.io/roadmap",
+                href: "https://github.com/changeset-io/projects/1",
               },
               {
                 label: "Status",
-                href: "https://changeset.io/status",
+                href: "https://status.changeset.io",
               },
             ],
           },
