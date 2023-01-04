@@ -19,6 +19,11 @@ const sidebars = {
       label: 'Get Started',
         items: ['get-started/welcome', 'get-started/connect', 'get-started/new-repo', 'get-started/create-a-workflow'],
     },
+    {
+      type: 'category',
+      label: 'Reference',
+        items: ['reference/events', 'reference/attributes'],
+    },
   ],
 };
 
