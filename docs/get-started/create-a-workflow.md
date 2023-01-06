@@ -59,17 +59,17 @@ This example makes use of the "Add a comment to the pull request" action
 
 Most actions have some values that you can customize, such as specifying the markdown to use when adding a comment.
 
-Click `edit` to customize the options for the selected option
+Click `edit` to customize the options for the selected action. 
 
 Here, we've added some markdown for the comment that will be posted when the example workflow is triggered.
 
 ![Add Comment](/img/md.png)
 
-Click `save` to finish customizing the action
+Click `Save` to finish customizing the action
 
 # Save & Test
 
-That's it! Click the `Save Workflow` button in the top-right corner to save the workflow and be taken back to the repository overview screen. All that's left is to verify that the workflow is working as intended.
+That's it! Click the `Save Workflow` button in the top-right to save the workflow and be taken back to the repository overview screen. All that's left is to verify that the workflow is working as intended.
 
 ### Example Pull Request
 
