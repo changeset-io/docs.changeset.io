@@ -20,7 +20,7 @@ Once you've connected an account, the interface should refresh and display the r
 
 ## Overview
 
-Once you've connected a repository, you'll be taken to the repository overview. Your workflows and related recent events will appear here after you start creating and running workflows.
+Once you've connected a repository, you'll be taken to the repository overview. Your workflows will appear here after you have created one or more.
 
 ![Overview](/img/repo.png)
 

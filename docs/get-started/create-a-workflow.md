@@ -27,8 +27,6 @@ The simple workflow in this example only needs to run when two events occur:
 
 Sometimes a workflow requires looking at a specific file in a pull request, or modify one of the default attributes to better fit your needs. You can use custom attributes to apply maps, filters, and functions to achieve this behavior in workflows. The Custom Attribute [documentation](create-a-workflow#custom-attributes-1) digs deeper into this functionality.
 
-![Custom Attributes](/img/custom-attributes.png)
-
 ## Conditions
 
 Conditions are used to ensure that a workflow only runs under a specific set of circumstances. For example, You may only want to run a workflow if a specific label is added to a code review, or when no one has been assigned as a reviewer. You could also not specify any conditions, and your workflow will run everytime the selected events fire. 
@@ -91,11 +89,11 @@ The workflow has ran, tested the conditions, and the comment action from our wor
 
 Custom attributes allow you to modify some attributes by applying filters or functions to lists. As a contrived example, you might want to make sure that no one changes more than 3 javascript files in a pull request. To create this rule, we can customize the `files` attribute and create a new attribute that represents the number of changed javascript files. This will require 3 modifiers:
 
-- Filter the list down to only files that were changed
 - Filter the list down to just javascript files
+- Filter the list down to only files that were changed
 - Count the results in the list
 
-Click "Create Custom Attribute" to add a new custom attribute
+Start by visiting the "Custom Attributes" link in the repository overview sidebar and click "Create A Custom Attribute"
 
 ![custom attribute](/img/custom-attr.png)
 
@@ -103,35 +101,53 @@ The key of the custom attribute is used when creating conditions, and starts as 
 
 ![new attr](/img/custom-attr-new.png)
 
-Click the key, in this case "polished-snow", to customize the name of the attribute. Note that any spaces or special characters are removed from the key.
+You can click the underlined key, in this case "dark-cloud-0886", to customize the name of the attribute. Note that any spaces or special characters are removed from the key, and spaces are replaced with hyphens.
 
 ![new attr name](/img/custom-attr-name.png)
 
-Select "Files" in the attribute dropdown so that this custom attribute is derived from the list of files in the pull request.
+Note that "Files" is sellected in the attribute dropdown so that this custom attribute is derived from the list of files in the pull request.
 
 #### Modifiers
 
-Clicking "modifiers" will bring up the modifiers menu, and depending on which attribute you're looking at, the diffrent available filters and functions.
+Clicking "edit" will reveal the modifiers editor, and depending on which attribute you're looking at, the diffrent available filters and functions.
 
 ![modifiers](/img/modifiers.png)
 
-Click "Filter" to create the first filter function.
+There is a default, empty-valued filter created by default. This default filter is looking for files by their filenames, and is using an "equals" operator.
 
-Firt we want to filter the list down to only files where the `status` equals `modified`
+Click "where filename equals" to display the filter editor modal.
+
+![filters](/img/filters.png)
+
+The upper portion of the modal shows the different attributes of a file available for filtering, and the lower portion shows the available operators for filtering.
+
+Click "matches" to create a filter that runs a match operation against filenames.
+
+Click outside of the modal to return to the filter, and note that it now shows "where filename matches"
+
+For the value, input "*.js" to match against files that have a javascript extension
+
+
+![filters](/img/filter-value.png)
+
+Next we'll want to filter the list down to only files where the `status` equals `modified`
+
+Click the "Filter" button to add a new filter to the pipeline
+
+
+![filters](/img/new-filter.png)
+
+Click "where filename equals" to once again open the filter editor modal.
+
+Select the "status" attribute button to create a filter that looks at files' statuses (added, modified, deleted)
+
+Close the modal and set the "status" dropdown to "modified" so that the filter looks at only files that are modified
 
 ![modifier 1](/img/modifier-1.png)
 
-Click "Filter" to create the next filter function.
-
-Next we want to filter the list down to only files where the `filename` includes `.js`
-
-![modifier 2](/img/modifier-2.png)
-
 Click "Count" to apply the `count` function to the resulting list
 
-![modifier 3](/img/modifier-3.png)
-
-Now that the custom attribute is complete, click "close" to close the modifier menu.
+![modifier 2](/img/modifier-2.png)
 
 The custom attribute can now be referenced when creating conditions
 
